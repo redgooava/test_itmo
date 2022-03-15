@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method = "POST">
+        {% csrf_token %}
+        <input type="text" id="operation" name="operation" value="" placeholder="Математическая операция">
+        <input type="text" id="index" name="index" value="" placeholder="Индекс дочернего класса">
+        <input type="submit" id="button" value="Применить">
+    </form>
+</body>
+</html>
