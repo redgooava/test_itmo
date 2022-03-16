@@ -5,13 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Добавление узла-вектора</h1>
+    <h1>Редактирование узла-вектора</h1>
     <form method = "POST">
         {% csrf_token %}
+        <input type="text" id="idNode" name="idNode" value="" placeholder="ID узла">
         <input type="text" id="value" name="value" value="" placeholder="Значение (вектор)">
         <input type="text" id="index" name="index" value="" placeholder="Индекс дочернего класса">
         <input type="submit" id="button" value="Применить">
     </form>
-    <h3>{{ error }}</h3>
 </body>
 </html>

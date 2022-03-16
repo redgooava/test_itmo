@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
+    <img src="{% static 'images/graph_img.png' %}" alt="альтернативный текст">
+		{% for i in nodeDescription %}
+            <h4>{{ i }}</h4>
+		{% endfor %}
 </body>
 </html>

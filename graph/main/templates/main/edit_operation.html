@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Добавление узла-операции</h1>
+    <h1>Редактирование узла-операции</h1>
     <form method = "POST">
         {% csrf_token %}
+        <input type="text" id="idNode" name="idNode" value="" placeholder="ID узла">
         <input type="text" id="operation" name="operation" value="" placeholder="Математическая операция">
         <input type="text" id="index" name="index" value="" placeholder="Индекс дочернего класса">
         <input type="submit" id="button" value="Применить">
